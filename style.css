@@ -1,0 +1,75 @@
+/* General Reset */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #d6e4f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Container */
+.container {
+  width: 100%;
+  max-width: 400px;
+  margin: 20px;
+}
+
+/* Password Generator Box */
+.password-generator {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.password-generator h1 {
+  color: #1d3557;
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin: 10px 0;
+  color: #333333;
+  font-weight: bold;
+}
+
+input[type="number"],
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.options {
+  margin: 10px 0;
+  text-align: left;
+}
+
+.options label {
+  display: block;
+  margin: 5px 0;
+}
+
+button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  background-color: #457b9d;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #1d3557;
+}
