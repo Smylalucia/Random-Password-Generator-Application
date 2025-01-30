@@ -1,4 +1,3 @@
-// JavaScript Code
 document.getElementById("generate").addEventListener("click", function () {
   const length = parseInt(document.getElementById("length").value);
   const includeLowercase = document.getElementById("lowercase").checked;
@@ -6,7 +5,6 @@ document.getElementById("generate").addEventListener("click", function () {
   const includeNumbers = document.getElementById("numbers").checked;
   const includeSymbols = document.getElementById("symbols").checked;
 
-  // Character pools
   const lowercaseChars = "abcdefghijklmnopqrstuvwxyz";
   const uppercaseChars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
   const numberChars = "0123456789";
@@ -14,7 +12,6 @@ document.getElementById("generate").addEventListener("click", function () {
 
   let charPool = "";
 
-  // Build character pool based on selections
   if (includeLowercase) charPool += lowercaseChars;
   if (includeUppercase) charPool += uppercaseChars;
   if (includeNumbers) charPool += numberChars;
@@ -25,7 +22,6 @@ document.getElementById("generate").addEventListener("click", function () {
     return;
   }
 
-  // Generate password
   let password = "";
   for (let i = 0; i < length; i++) {
     const randomIndex = Math.floor(Math.random() * charPool.length);
@@ -35,7 +31,6 @@ document.getElementById("generate").addEventListener("click", function () {
   document.getElementById("password").value = password;
 });
 
-// Copy to Clipboard
 document.getElementById("copy").addEventListener("click", function () {
   const password = document.getElementById("password").value;
 
